@@ -1,0 +1,9 @@
+C:\Comedor2.0\Comedor.Modelo\bin\Debug\Comedor.Modelo.exe.config
+C:\Comedor2.0\Comedor.Modelo\bin\Debug\Comedor.Modelo.exe
+C:\Comedor2.0\Comedor.Modelo\bin\Debug\Comedor.Modelo.pdb
+C:\Comedor2.0\Comedor.Modelo\obj\Debug\Comedor.Modelo.Form1.resources
+C:\Comedor2.0\Comedor.Modelo\obj\Debug\Comedor.Modelo.Properties.Resources.resources
+C:\Comedor2.0\Comedor.Modelo\obj\Debug\Comedor.Modelo.csproj.GenerateResource.Cache
+C:\Comedor2.0\Comedor.Modelo\obj\Debug\Comedor.Modelo.exe
+C:\Comedor2.0\Comedor.Modelo\obj\Debug\Comedor.Modelo.pdb
+C:\Comedor2.0\Comedor.Modelo\obj\Debug\Comedor.Modelo.csprojResolveAssemblyReference.cache

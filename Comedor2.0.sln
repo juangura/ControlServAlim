@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comedor.Control", "Comedor.Control\Comedor.Control.csproj", "{F4B900D5-24C1-44E8-B788-407FF8FDE43C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comedor.Modelo", "Comedor.Modelo\Comedor.Modelo.csproj", "{7D999320-DEA9-4C05-9A27-F74DA87A15EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comedor.Vista", "Comedor.Vista\Comedor.Vista.csproj", "{C70867EF-B486-4123-BCE5-7C49EFBC4AE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4B900D5-24C1-44E8-B788-407FF8FDE43C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4B900D5-24C1-44E8-B788-407FF8FDE43C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4B900D5-24C1-44E8-B788-407FF8FDE43C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4B900D5-24C1-44E8-B788-407FF8FDE43C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D999320-DEA9-4C05-9A27-F74DA87A15EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D999320-DEA9-4C05-9A27-F74DA87A15EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D999320-DEA9-4C05-9A27-F74DA87A15EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D999320-DEA9-4C05-9A27-F74DA87A15EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C70867EF-B486-4123-BCE5-7C49EFBC4AE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C70867EF-B486-4123-BCE5-7C49EFBC4AE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C70867EF-B486-4123-BCE5-7C49EFBC4AE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C70867EF-B486-4123-BCE5-7C49EFBC4AE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
