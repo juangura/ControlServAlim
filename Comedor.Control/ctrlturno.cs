@@ -55,7 +55,7 @@ namespace Comedor.Control
             List<mdlTurno> resp = new List<mdlTurno>();
 
             conexion.open();
-            string query = "select IdTurno, HoraInicio, HoraFin from TURNO where DesAlmCen=(select DesAlmCen from TURNO where IdTurno='" + idturno + "') and IdDia='" + idDia + "' and CONVERT(time,HoraInicio)>CONVERT(time,SYSDATETIME()) and estado<>0";
+            string query = "select IdTurno, HoraInicio, HoraFin from TURNO where DesAlmCen=(select DesAlmCen from TURNO where IdTurno='" + idturno + "') and IdDia='" + idDia + "' and CONVERT(time,HoraInicio)>CONVERT(time,SYSDATETIME()) and estado<>0  order by HoraInicio";
 
             // Create a SqlCommand object and pass the constructor the connection string and the query string.
             SqlCommand queryCommand = new SqlCommand(query, conexion.get());
