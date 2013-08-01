@@ -109,36 +109,39 @@
             // lblHora
             // 
             this.lblHora.AutoSize = true;
-            this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.lblHora.Location = new System.Drawing.Point(917, 29);
+            this.lblHora.Font = new System.Drawing.Font("Segoe UI Symbol", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblHora.Location = new System.Drawing.Point(872, -9);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(55, 20);
+            this.lblHora.Size = new System.Drawing.Size(229, 86);
             this.lblHora.TabIndex = 0;
             this.lblHora.Text = "--:--:--";
             // 
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
-            this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(783, 29);
+            this.lblFecha.Font = new System.Drawing.Font("Segoe UI Symbol", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblFecha.Location = new System.Drawing.Point(47, 10);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(55, 20);
+            this.lblFecha.Size = new System.Drawing.Size(148, 50);
             this.lblFecha.TabIndex = 1;
             this.lblFecha.Text = "--/--/--";
             // 
             // lblTurno
             // 
             this.lblTurno.AutoSize = true;
-            this.lblTurno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.lblTurno.Location = new System.Drawing.Point(290, 29);
+            this.lblTurno.Font = new System.Drawing.Font("Segoe UI Symbol", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTurno.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblTurno.Location = new System.Drawing.Point(361, 10);
             this.lblTurno.Name = "lblTurno";
-            this.lblTurno.Size = new System.Drawing.Size(189, 20);
+            this.lblTurno.Size = new System.Drawing.Size(432, 50);
             this.lblTurno.TabIndex = 3;
             this.lblTurno.Text = "TURNO(--:--:-- ; --:--:--)";
             // 
             // panel_global
             // 
-            this.panel_global.BackColor = System.Drawing.Color.White;
+            this.panel_global.BackColor = System.Drawing.Color.Transparent;
             this.panel_global.Controls.Add(this.txtcodigo);
             this.panel_global.Controls.Add(this.panel4);
             this.panel_global.Controls.Add(this.panel3);
@@ -172,7 +175,7 @@
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.White;
+            this.panel8.BackColor = System.Drawing.Color.Transparent;
             this.panel8.Controls.Add(this.pictureBox3);
             this.panel8.Controls.Add(this.txtcodigo3);
             this.panel8.Controls.Add(this.label5);
@@ -203,12 +206,13 @@
             this.txtcodigo3.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold);
             this.txtcodigo3.Location = new System.Drawing.Point(211, 125);
             this.txtcodigo3.Name = "txtcodigo3";
-            this.txtcodigo3.Size = new System.Drawing.Size(51, 22);
+            this.txtcodigo3.Size = new System.Drawing.Size(62, 22);
             this.txtcodigo3.TabIndex = 6;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label5.Location = new System.Drawing.Point(141, 23);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 13);
@@ -228,7 +232,8 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(153, 130);
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label6.Location = new System.Drawing.Point(157, 129);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 13);
             this.label6.TabIndex = 5;
@@ -237,6 +242,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label7.Location = new System.Drawing.Point(143, 70);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(62, 13);
@@ -264,7 +270,7 @@
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.BackColor = System.Drawing.Color.Transparent;
             this.panel7.Controls.Add(this.pictureBox2);
             this.panel7.Controls.Add(this.txtcodigo2);
             this.panel7.Controls.Add(this.label2);
@@ -295,12 +301,13 @@
             this.txtcodigo2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold);
             this.txtcodigo2.Location = new System.Drawing.Point(211, 125);
             this.txtcodigo2.Name = "txtcodigo2";
-            this.txtcodigo2.Size = new System.Drawing.Size(51, 22);
+            this.txtcodigo2.Size = new System.Drawing.Size(62, 22);
             this.txtcodigo2.TabIndex = 6;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label2.Location = new System.Drawing.Point(141, 23);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 13);
@@ -320,7 +327,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(153, 127);
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label3.Location = new System.Drawing.Point(158, 129);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 5;
@@ -329,6 +337,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label4.Location = new System.Drawing.Point(143, 71);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 13);
@@ -369,9 +378,9 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.pcbimagen1);
             this.panel5.Controls.Add(this.txtcodigo_p);
             this.panel5.Controls.Add(this.lblarea);
-            this.panel5.Controls.Add(this.pcbimagen1);
             this.panel5.Controls.Add(this.txtarea);
             this.panel5.Controls.Add(this.txtnombre);
             this.panel5.Controls.Add(this.lblnombre);
@@ -387,22 +396,24 @@
             // txtcodigo_p
             // 
             this.txtcodigo_p.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtcodigo_p.Font = new System.Drawing.Font("Bradley Hand ITC", 48F, System.Drawing.FontStyle.Bold);
-            this.txtcodigo_p.Location = new System.Drawing.Point(32, 21);
+            this.txtcodigo_p.Font = new System.Drawing.Font("Segoe UI Symbol", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcodigo_p.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtcodigo_p.Location = new System.Drawing.Point(166, 330);
             this.txtcodigo_p.Margin = new System.Windows.Forms.Padding(2);
             this.txtcodigo_p.Multiline = true;
             this.txtcodigo_p.Name = "txtcodigo_p";
-            this.txtcodigo_p.Size = new System.Drawing.Size(55, 246);
+            this.txtcodigo_p.Size = new System.Drawing.Size(138, 72);
             this.txtcodigo_p.TabIndex = 50;
             this.txtcodigo_p.Text = "000";
             // 
             // lblarea
             // 
             this.lblarea.AutoSize = true;
-            this.lblarea.Font = new System.Drawing.Font("Bradley Hand ITC", 12F, System.Drawing.FontStyle.Bold);
-            this.lblarea.Location = new System.Drawing.Point(40, 480);
+            this.lblarea.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblarea.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblarea.Location = new System.Drawing.Point(51, 478);
             this.lblarea.Name = "lblarea";
-            this.lblarea.Size = new System.Drawing.Size(62, 20);
+            this.lblarea.Size = new System.Drawing.Size(51, 21);
             this.lblarea.TabIndex = 67;
             this.lblarea.Text = "AREA:";
             // 
@@ -413,7 +424,7 @@
             this.pcbimagen1.Image = ((System.Drawing.Image)(resources.GetObject("pcbimagen1.Image")));
             this.pcbimagen1.Location = new System.Drawing.Point(95, 19);
             this.pcbimagen1.Name = "pcbimagen1";
-            this.pcbimagen1.Size = new System.Drawing.Size(326, 370);
+            this.pcbimagen1.Size = new System.Drawing.Size(281, 328);
             this.pcbimagen1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbimagen1.TabIndex = 31;
             this.pcbimagen1.TabStop = false;
@@ -442,30 +453,33 @@
             // lblnombre
             // 
             this.lblnombre.AutoSize = true;
-            this.lblnombre.Font = new System.Drawing.Font("Bradley Hand ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnombre.Location = new System.Drawing.Point(2, 412);
+            this.lblnombre.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnombre.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblnombre.Location = new System.Drawing.Point(27, 410);
             this.lblnombre.Name = "lblnombre";
-            this.lblnombre.Size = new System.Drawing.Size(103, 20);
+            this.lblnombre.Size = new System.Drawing.Size(78, 21);
             this.lblnombre.TabIndex = 61;
-            this.lblnombre.Text = "NOMBRES:";
+            this.lblnombre.Text = "NOMBRE:";
             // 
             // lblapellido
             // 
             this.lblapellido.AutoSize = true;
-            this.lblapellido.Font = new System.Drawing.Font("Bradley Hand ITC", 12F, System.Drawing.FontStyle.Bold);
-            this.lblapellido.Location = new System.Drawing.Point(8, 446);
+            this.lblapellido.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblapellido.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblapellido.Location = new System.Drawing.Point(20, 444);
             this.lblapellido.Name = "lblapellido";
-            this.lblapellido.Size = new System.Drawing.Size(97, 20);
+            this.lblapellido.Size = new System.Drawing.Size(83, 21);
             this.lblapellido.TabIndex = 65;
             this.lblapellido.Text = "APELLIDO:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bradley Hand ITC", 12F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(28, 515);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label1.Location = new System.Drawing.Point(36, 513);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 20);
+            this.label1.Size = new System.Drawing.Size(66, 21);
             this.label1.TabIndex = 62;
             this.label1.Text = "GRUPO:";
             // 
@@ -500,7 +514,7 @@
             // 
             // panel9
             // 
-            this.panel9.BackColor = System.Drawing.Color.White;
+            this.panel9.BackColor = System.Drawing.Color.Transparent;
             this.panel9.Controls.Add(this.pictureBox1);
             this.panel9.Controls.Add(this.txtcodigo1);
             this.panel9.Controls.Add(this.label15);
@@ -531,12 +545,13 @@
             this.txtcodigo1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold);
             this.txtcodigo1.Location = new System.Drawing.Point(211, 125);
             this.txtcodigo1.Name = "txtcodigo1";
-            this.txtcodigo1.Size = new System.Drawing.Size(51, 22);
+            this.txtcodigo1.Size = new System.Drawing.Size(62, 22);
             this.txtcodigo1.TabIndex = 6;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
+            this.label15.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label15.Location = new System.Drawing.Point(141, 23);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(57, 13);
@@ -556,7 +571,8 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(153, 127);
+            this.label17.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label17.Location = new System.Drawing.Point(159, 129);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(52, 13);
             this.label17.TabIndex = 5;
@@ -565,6 +581,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
+            this.label16.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label16.Location = new System.Drawing.Point(143, 71);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(62, 13);
@@ -592,6 +609,7 @@
             // 
             // panel6
             // 
+            this.panel6.BackColor = System.Drawing.Color.Transparent;
             this.panel6.Controls.Add(this.lblHora);
             this.panel6.Controls.Add(this.lblFecha);
             this.panel6.Controls.Add(this.lblTurno);
@@ -605,11 +623,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::Comedor.Vista.Properties.Resources.white_back;
             this.ClientSize = new System.Drawing.Size(1293, 741);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel_global);
             this.Controls.Add(this.dgvTurno);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Verificacion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Verificacion";
             this.Load += new System.EventHandler(this.Verificacion_Load);
             this.panel_global.ResumeLayout(false);

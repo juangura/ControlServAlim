@@ -28,7 +28,7 @@ namespace Comedor.Vista
         bool ok = false; //confimar el turno
         String idturno=""; //id general
         String idDia=""; //id general
-        SoundPlayer player = new SoundPlayer("C:/Comedor2.0/AUDIO DE SIRENAS PARA UN SIMULACRO.wav");
+        SoundPlayer player = new SoundPlayer("C:/Comedor2.0/alerta.mp3");
         KeyPressEventArgs temp;
         bool cancel = false;
         int cont = 0;

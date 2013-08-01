@@ -20,6 +20,7 @@ C:\Proyec_C#\Comedor2.0\Comedor.Control\obj\Debug\Comedor.Control.Properties.Res
 C:\Proyec_C#\Comedor2.0\Comedor.Control\obj\Debug\Comedor.Control.csproj.GenerateResource.Cache
 C:\Proyec_C#\Comedor2.0\Comedor.Control\obj\Debug\Comedor.Control.exe
 C:\Proyec_C#\Comedor2.0\Comedor.Control\obj\Debug\Comedor.Control.pdb
+<<<<<<< HEAD
 C:\ComedorGit\Control\Comedor.Control\bin\Debug\Comedor.Control.exe.config
 C:\ComedorGit\Control\Comedor.Control\bin\Debug\Comedor.Control.exe
 C:\ComedorGit\Control\Comedor.Control\bin\Debug\Comedor.Control.pdb
@@ -31,3 +32,16 @@ C:\ComedorGit\Control\Comedor.Control\obj\Debug\Comedor.Control.Properties.Resou
 C:\ComedorGit\Control\Comedor.Control\obj\Debug\Comedor.Control.csproj.GenerateResource.Cache
 C:\ComedorGit\Control\Comedor.Control\obj\Debug\Comedor.Control.exe
 C:\ComedorGit\Control\Comedor.Control\obj\Debug\Comedor.Control.pdb
+=======
+C:\Comedor\ControlServAlim\Comedor.Control\bin\Debug\Comedor.Control.exe.config
+C:\Comedor\ControlServAlim\Comedor.Control\bin\Debug\Comedor.Control.exe
+C:\Comedor\ControlServAlim\Comedor.Control\bin\Debug\Comedor.Control.pdb
+C:\Comedor\ControlServAlim\Comedor.Control\bin\Debug\Comedor.Modelo.exe
+C:\Comedor\ControlServAlim\Comedor.Control\bin\Debug\Comedor.Modelo.pdb
+C:\Comedor\ControlServAlim\Comedor.Control\obj\Debug\Comedor.Control.csprojResolveAssemblyReference.cache
+C:\Comedor\ControlServAlim\Comedor.Control\obj\Debug\Comedor.Control.Form1.resources
+C:\Comedor\ControlServAlim\Comedor.Control\obj\Debug\Comedor.Control.Properties.Resources.resources
+C:\Comedor\ControlServAlim\Comedor.Control\obj\Debug\Comedor.Control.csproj.GenerateResource.Cache
+C:\Comedor\ControlServAlim\Comedor.Control\obj\Debug\Comedor.Control.exe
+C:\Comedor\ControlServAlim\Comedor.Control\obj\Debug\Comedor.Control.pdb
+>>>>>>> 2079b713380e0cfc5072c072aa8adfaba98f9be0

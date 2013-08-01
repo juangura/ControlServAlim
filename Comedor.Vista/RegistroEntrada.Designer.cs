@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroEntrada));
+            System.Windows.Forms.Label lblapellido;
             this.timer_seg = new System.Windows.Forms.Timer(this.components);
             this.timer_min = new System.Windows.Forms.Timer(this.components);
             this.lblHora = new System.Windows.Forms.Label();
@@ -69,7 +70,6 @@
             this.txtarea = new System.Windows.Forms.TextBox();
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.lblnombre = new System.Windows.Forms.Label();
-            this.lblapellido = new System.Windows.Forms.Label();
             this.txtapellido = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtapellido1 = new System.Windows.Forms.TextBox();
@@ -79,7 +79,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dgvTurno = new System.Windows.Forms.DataGridView();
             this.panel6 = new System.Windows.Forms.Panel();
+
             this.dgvTurnos = new System.Windows.Forms.DataGridView();
+
+            lblapellido = new System.Windows.Forms.Label();
+
             this.panel_global.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -109,36 +113,39 @@
             // lblHora
             // 
             this.lblHora.AutoSize = true;
-            this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.lblHora.Location = new System.Drawing.Point(917, 29);
+            this.lblHora.Font = new System.Drawing.Font("Segoe UI Symbol", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblHora.Location = new System.Drawing.Point(866, -9);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(55, 20);
+            this.lblHora.Size = new System.Drawing.Size(229, 86);
             this.lblHora.TabIndex = 0;
             this.lblHora.Text = "--:--:--";
             // 
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
-            this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(783, 29);
+            this.lblFecha.Font = new System.Drawing.Font("Segoe UI Symbol", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblFecha.Location = new System.Drawing.Point(46, 10);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(55, 20);
+            this.lblFecha.Size = new System.Drawing.Size(148, 50);
             this.lblFecha.TabIndex = 1;
             this.lblFecha.Text = "--/--/--";
             // 
             // lblTurno
             // 
             this.lblTurno.AutoSize = true;
-            this.lblTurno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.lblTurno.Location = new System.Drawing.Point(290, 29);
+            this.lblTurno.Font = new System.Drawing.Font("Segoe UI Symbol", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTurno.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblTurno.Location = new System.Drawing.Point(372, 10);
             this.lblTurno.Name = "lblTurno";
-            this.lblTurno.Size = new System.Drawing.Size(189, 20);
+            this.lblTurno.Size = new System.Drawing.Size(432, 50);
             this.lblTurno.TabIndex = 3;
             this.lblTurno.Text = "TURNO(--:--:-- ; --:--:--)";
             // 
             // panel_global
             // 
-            this.panel_global.BackColor = System.Drawing.Color.White;
+            this.panel_global.BackColor = System.Drawing.Color.Transparent;
             this.panel_global.Controls.Add(this.btnReserva);
             this.panel_global.Controls.Add(this.button3);
             this.panel_global.Controls.Add(this.btncantidad);
@@ -153,39 +160,43 @@
             // 
             // btnReserva
             // 
+            this.btnReserva.BackColor = System.Drawing.Color.White;
             this.btnReserva.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnReserva.Location = new System.Drawing.Point(741, 186);
             this.btnReserva.Name = "btnReserva";
             this.btnReserva.Size = new System.Drawing.Size(158, 64);
             this.btnReserva.TabIndex = 78;
             this.btnReserva.Text = "RESERVAS";
-            this.btnReserva.UseVisualStyleBackColor = true;
+            this.btnReserva.UseVisualStyleBackColor = false;
             this.btnReserva.Click += new System.EventHandler(this.btnReserva_Click);
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.White;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.button3.Location = new System.Drawing.Point(741, 269);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(158, 64);
             this.button3.TabIndex = 77;
             this.button3.Text = "CONTINUAR";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // btncantidad
             // 
+            this.btncantidad.BackColor = System.Drawing.Color.White;
             this.btncantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncantidad.Location = new System.Drawing.Point(741, 106);
             this.btncantidad.Name = "btncantidad";
             this.btncantidad.Size = new System.Drawing.Size(158, 64);
             this.btncantidad.TabIndex = 75;
             this.btncantidad.Text = "ATENCIONES";
-            this.btncantidad.UseVisualStyleBackColor = true;
+            this.btncantidad.UseVisualStyleBackColor = false;
             this.btncantidad.Click += new System.EventHandler(this.btncantidad_Click);
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.txtapellido3);
             this.panel4.Controls.Add(this.label5);
@@ -210,6 +221,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label5.Location = new System.Drawing.Point(153, 22);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 13);
@@ -239,6 +251,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label7.Location = new System.Drawing.Point(153, 77);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(62, 13);
@@ -247,6 +260,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.txtnombre2);
@@ -261,6 +275,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label4.Location = new System.Drawing.Point(148, 69);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 13);
@@ -290,6 +305,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label2.Location = new System.Drawing.Point(148, 19);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 13);
@@ -313,10 +329,14 @@
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.lblCodigo);
             this.panel1.Controls.Add(this.panel5);
-            this.panel1.Location = new System.Drawing.Point(55, 19);
+            this.panel1.Location = new System.Drawing.Point(66, 20);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
+<<<<<<< HEAD
             this.panel1.Size = new System.Drawing.Size(476, 506);
+=======
+            this.panel1.Size = new System.Drawing.Size(480, 506);
+>>>>>>> 2079b713380e0cfc5072c072aa8adfaba98f9be0
             this.panel1.TabIndex = 71;
             // 
             // panel7
@@ -364,30 +384,30 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Bradley Hand ITC", 21.75F, System.Drawing.FontStyle.Bold);
+            this.label3.Font = new System.Drawing.Font("Segoe UI Symbol", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(34, 88);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(174, 37);
+            this.label3.Size = new System.Drawing.Size(173, 40);
             this.label3.TabIndex = 2;
             this.label3.Text = "CANTIDAD:";
             // 
             // lblfalta
             // 
             this.lblfalta.AutoSize = true;
-            this.lblfalta.Font = new System.Drawing.Font("Bradley Hand ITC", 21.75F, System.Drawing.FontStyle.Bold);
-            this.lblfalta.Location = new System.Drawing.Point(49, 288);
+            this.lblfalta.Font = new System.Drawing.Font("Segoe UI Symbol", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblfalta.Location = new System.Drawing.Point(72, 285);
             this.lblfalta.Name = "lblfalta";
-            this.lblfalta.Size = new System.Drawing.Size(144, 37);
+            this.lblfalta.Size = new System.Drawing.Size(133, 40);
             this.lblfalta.TabIndex = 1;
             this.lblfalta.Text = "FALTAN:";
             // 
             // lblatendido
             // 
             this.lblatendido.AutoSize = true;
-            this.lblatendido.Font = new System.Drawing.Font("Bradley Hand ITC", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblatendido.Location = new System.Drawing.Point(13, 188);
+            this.lblatendido.Font = new System.Drawing.Font("Segoe UI Symbol", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblatendido.Location = new System.Drawing.Point(18, 189);
             this.lblatendido.Name = "lblatendido";
-            this.lblatendido.Size = new System.Drawing.Size(195, 37);
+            this.lblatendido.Size = new System.Drawing.Size(189, 40);
             this.lblatendido.TabIndex = 0;
             this.lblatendido.Text = "ATENDIDOS:";
             // 
@@ -422,13 +442,13 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.pcbimagen1);
             this.panel5.Controls.Add(this.txtcodigo_p);
             this.panel5.Controls.Add(this.lblarea);
-            this.panel5.Controls.Add(this.pcbimagen1);
             this.panel5.Controls.Add(this.txtarea);
             this.panel5.Controls.Add(this.txtnombre);
             this.panel5.Controls.Add(this.lblnombre);
-            this.panel5.Controls.Add(this.lblapellido);
+            this.panel5.Controls.Add(lblapellido);
             this.panel5.Controls.Add(this.txtapellido);
             this.panel5.Location = new System.Drawing.Point(11, 10);
             this.panel5.Name = "panel5";
@@ -438,12 +458,13 @@
             // txtcodigo_p
             // 
             this.txtcodigo_p.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtcodigo_p.Font = new System.Drawing.Font("Bradley Hand ITC", 48F, System.Drawing.FontStyle.Bold);
-            this.txtcodigo_p.Location = new System.Drawing.Point(32, 21);
+            this.txtcodigo_p.Font = new System.Drawing.Font("Segoe UI Symbol", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcodigo_p.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtcodigo_p.Location = new System.Drawing.Point(171, 328);
             this.txtcodigo_p.Margin = new System.Windows.Forms.Padding(2);
             this.txtcodigo_p.Multiline = true;
             this.txtcodigo_p.Name = "txtcodigo_p";
-            this.txtcodigo_p.Size = new System.Drawing.Size(55, 246);
+            this.txtcodigo_p.Size = new System.Drawing.Size(130, 76);
             this.txtcodigo_p.TabIndex = 50;
             this.txtcodigo_p.Text = "000";
             // 
@@ -464,7 +485,7 @@
             this.pcbimagen1.Image = ((System.Drawing.Image)(resources.GetObject("pcbimagen1.Image")));
             this.pcbimagen1.Location = new System.Drawing.Point(95, 19);
             this.pcbimagen1.Name = "pcbimagen1";
-            this.pcbimagen1.Size = new System.Drawing.Size(326, 370);
+            this.pcbimagen1.Size = new System.Drawing.Size(280, 325);
             this.pcbimagen1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbimagen1.TabIndex = 31;
             this.pcbimagen1.TabStop = false;
@@ -492,22 +513,24 @@
             // lblnombre
             // 
             this.lblnombre.AutoSize = true;
-            this.lblnombre.Font = new System.Drawing.Font("Bradley Hand ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnombre.Location = new System.Drawing.Point(2, 412);
+            this.lblnombre.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnombre.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblnombre.Location = new System.Drawing.Point(25, 409);
             this.lblnombre.Name = "lblnombre";
-            this.lblnombre.Size = new System.Drawing.Size(103, 20);
+            this.lblnombre.Size = new System.Drawing.Size(85, 21);
             this.lblnombre.TabIndex = 61;
-            this.lblnombre.Text = "NOMBRES:";
+            this.lblnombre.Text = "NOMBRE:";
             // 
             // lblapellido
             // 
-            this.lblapellido.AutoSize = true;
-            this.lblapellido.Font = new System.Drawing.Font("Bradley Hand ITC", 12F, System.Drawing.FontStyle.Bold);
-            this.lblapellido.Location = new System.Drawing.Point(8, 446);
-            this.lblapellido.Name = "lblapellido";
-            this.lblapellido.Size = new System.Drawing.Size(97, 20);
-            this.lblapellido.TabIndex = 65;
-            this.lblapellido.Text = "APELLIDO:";
+            lblapellido.AutoSize = true;
+            lblapellido.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lblapellido.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            lblapellido.Location = new System.Drawing.Point(18, 443);
+            lblapellido.Name = "lblapellido";
+            lblapellido.Size = new System.Drawing.Size(92, 21);
+            lblapellido.TabIndex = 65;
+            lblapellido.Text = "APELLIDO:";
             // 
             // txtapellido
             // 
@@ -521,6 +544,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.txtapellido1);
             this.panel2.Controls.Add(this.label16);
@@ -545,6 +569,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
+            this.label16.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label16.Location = new System.Drawing.Point(148, 57);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(62, 13);
@@ -564,6 +589,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
+            this.label15.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label15.Location = new System.Drawing.Point(148, 14);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(57, 13);
@@ -591,6 +617,7 @@
             // 
             // panel6
             // 
+            this.panel6.BackColor = System.Drawing.Color.Transparent;
             this.panel6.Controls.Add(this.lblHora);
             this.panel6.Controls.Add(this.lblFecha);
             this.panel6.Controls.Add(this.lblTurno);
@@ -612,12 +639,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::Comedor.Vista.Properties.Resources.white_back;
             this.ClientSize = new System.Drawing.Size(1293, 741);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel_global);
             this.Controls.Add(this.dgvTurno);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegistroEntrada";
-            this.Text = "REGISTRO ENTRADA";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Verificacion_Load);
             this.panel_global.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -672,7 +702,6 @@
         private System.Windows.Forms.TextBox txtarea;
         private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Label lblnombre;
-        private System.Windows.Forms.Label lblapellido;
         private System.Windows.Forms.TextBox txtapellido;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;

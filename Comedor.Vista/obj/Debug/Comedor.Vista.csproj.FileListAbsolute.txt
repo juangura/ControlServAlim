@@ -33,6 +33,7 @@ C:\Proyec_C#\Comedor2.0\Comedor.Vista\obj\Debug\Comedor.Vista.Properties.Resourc
 C:\Proyec_C#\Comedor2.0\Comedor.Vista\obj\Debug\Comedor.Vista.Verificacion.resources
 C:\Proyec_C#\Comedor2.0\Comedor.Vista\obj\Debug\Comedor.Vista.csproj.GenerateResource.Cache
 C:\Proyec_C#\Comedor2.0\Comedor.Vista\obj\Debug\Comedor.Vista.RegistroEntrada.resources
+<<<<<<< HEAD
 C:\ComedorGit\Control\Comedor.Vista\bin\Debug\Comedor.Vista.exe.config
 C:\ComedorGit\Control\Comedor.Vista\obj\Debug\Comedor.Vista.exe
 C:\ComedorGit\Control\Comedor.Vista\obj\Debug\Comedor.Vista.pdb
@@ -48,3 +49,20 @@ C:\ComedorGit\Control\Comedor.Vista\obj\Debug\Comedor.Vista.Form1.resources
 C:\ComedorGit\Control\Comedor.Vista\obj\Debug\Comedor.Vista.Properties.Resources.resources
 C:\ComedorGit\Control\Comedor.Vista\obj\Debug\Comedor.Vista.Verificacion.resources
 C:\ComedorGit\Control\Comedor.Vista\obj\Debug\Comedor.Vista.csproj.GenerateResource.Cache
+=======
+C:\Comedor\ControlServAlim\Comedor.Vista\bin\Debug\Comedor.Vista.exe.config
+C:\Comedor\ControlServAlim\Comedor.Vista\obj\Debug\Comedor.Vista.exe
+C:\Comedor\ControlServAlim\Comedor.Vista\obj\Debug\Comedor.Vista.pdb
+C:\Comedor\ControlServAlim\Comedor.Vista\bin\Debug\Comedor.Vista.exe
+C:\Comedor\ControlServAlim\Comedor.Vista\bin\Debug\Comedor.Vista.pdb
+C:\Comedor\ControlServAlim\Comedor.Vista\bin\Debug\Comedor.Control.exe
+C:\Comedor\ControlServAlim\Comedor.Vista\bin\Debug\Comedor.Modelo.exe
+C:\Comedor\ControlServAlim\Comedor.Vista\bin\Debug\Comedor.Control.pdb
+C:\Comedor\ControlServAlim\Comedor.Vista\bin\Debug\Comedor.Modelo.pdb
+C:\Comedor\ControlServAlim\Comedor.Vista\obj\Debug\Comedor.Vista.csprojResolveAssemblyReference.cache
+C:\Comedor\ControlServAlim\Comedor.Vista\obj\Debug\Comedor.Vista.RegistroEntrada.resources
+C:\Comedor\ControlServAlim\Comedor.Vista\obj\Debug\Comedor.Vista.Form1.resources
+C:\Comedor\ControlServAlim\Comedor.Vista\obj\Debug\Comedor.Vista.Properties.Resources.resources
+C:\Comedor\ControlServAlim\Comedor.Vista\obj\Debug\Comedor.Vista.Verificacion.resources
+C:\Comedor\ControlServAlim\Comedor.Vista\obj\Debug\Comedor.Vista.csproj.GenerateResource.Cache
+>>>>>>> 2079b713380e0cfc5072c072aa8adfaba98f9be0

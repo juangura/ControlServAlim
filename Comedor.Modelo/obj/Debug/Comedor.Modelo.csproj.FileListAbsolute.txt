@@ -7,3 +7,12 @@ C:\Comedor2.0\Comedor.Modelo\obj\Debug\Comedor.Modelo.csproj.GenerateResource.Ca
 C:\Comedor2.0\Comedor.Modelo\obj\Debug\Comedor.Modelo.exe
 C:\Comedor2.0\Comedor.Modelo\obj\Debug\Comedor.Modelo.pdb
 C:\Comedor2.0\Comedor.Modelo\obj\Debug\Comedor.Modelo.csprojResolveAssemblyReference.cache
+C:\Comedor\ControlServAlim\Comedor.Modelo\bin\Debug\Comedor.Modelo.exe.config
+C:\Comedor\ControlServAlim\Comedor.Modelo\bin\Debug\Comedor.Modelo.exe
+C:\Comedor\ControlServAlim\Comedor.Modelo\bin\Debug\Comedor.Modelo.pdb
+C:\Comedor\ControlServAlim\Comedor.Modelo\obj\Debug\Comedor.Modelo.csprojResolveAssemblyReference.cache
+C:\Comedor\ControlServAlim\Comedor.Modelo\obj\Debug\Comedor.Modelo.Form1.resources
+C:\Comedor\ControlServAlim\Comedor.Modelo\obj\Debug\Comedor.Modelo.Properties.Resources.resources
+C:\Comedor\ControlServAlim\Comedor.Modelo\obj\Debug\Comedor.Modelo.csproj.GenerateResource.Cache
+C:\Comedor\ControlServAlim\Comedor.Modelo\obj\Debug\Comedor.Modelo.exe
+C:\Comedor\ControlServAlim\Comedor.Modelo\obj\Debug\Comedor.Modelo.pdb
