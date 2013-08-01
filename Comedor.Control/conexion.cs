@@ -16,7 +16,7 @@ namespace Comedor.Control
        {
            try
            {
-               string cad = "Data Source=JUANWX\\SQLSERVER ;Initial Catalog=SERV-ALIM;Persist Security Info=True;User ID=jgr; Password=hola1234";
+               string cad = "Data Source=UPG_INGENIERIA\\UPGINGENIERIA ;Initial Catalog=SERV-ALIM;Persist Security Info=True;User ID=sa; Password=guille123456";
                conex = new SqlConnection(cad);
 
                conex.Open();
