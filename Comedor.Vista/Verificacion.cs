@@ -27,7 +27,7 @@ namespace Comedor.Vista
         bool ok = false; //confimar el turno
         String idturno=""; //id general
         String idDia=""; //id general
-        SoundPlayer player = new SoundPlayer("C:\\Proyec_C#\\Comedor2.0\\AUDIO DE SIRENAS PARA UN SIMULACRO.wav");
+        SoundPlayer player = new SoundPlayer("C:\\Proyec_C#\\Comedor2.0\\alerta.wav");
         KeyPressEventArgs temp;
         bool cancel = false;
         #endregion
@@ -35,6 +35,7 @@ namespace Comedor.Vista
         public Verificacion()
         {
             InitializeComponent();
+            txtcodigo.Focus();
         }
         
         #region metodos...
@@ -259,11 +260,11 @@ namespace Comedor.Vista
             mc.Grupo.Nombre = ListConsumidor[0].Grupo.Nombre;
             mc.Reserva = new mdlReserva();
             mc.Reserva.IdReserva = ListConsumidor[0].Reserva.IdReserva;
-
             txtcodigo_p.Text = txtcodigo.Text;
             ListIngreso.Add(mc);
             txtcodigo.Text = "";
 
+            
         }
 
         private void cancelar(Panel panel, String idconsumidor, String idturno, int estado, String idreserva, int tipo)
@@ -517,5 +518,6 @@ namespace Comedor.Vista
                 }
         }
 
+    
      }
 }

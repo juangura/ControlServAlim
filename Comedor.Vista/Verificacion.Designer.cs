@@ -58,9 +58,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.txtcodigo_p = new System.Windows.Forms.TextBox();
-            this.lblarea = new System.Windows.Forms.Label();
             this.pcbimagen1 = new System.Windows.Forms.PictureBox();
+            this.lblarea = new System.Windows.Forms.Label();
             this.txtarea = new System.Windows.Forms.TextBox();
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.lblnombre = new System.Windows.Forms.Label();
@@ -79,6 +78,7 @@
             this.txtapellido1 = new System.Windows.Forms.TextBox();
             this.dgvTurno = new System.Windows.Forms.DataGridView();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.txtcodigo_p = new System.Windows.Forms.TextBox();
             this.panel_global.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -111,7 +111,7 @@
             this.lblHora.AutoSize = true;
             this.lblHora.Font = new System.Drawing.Font("Segoe UI Symbol", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblHora.Location = new System.Drawing.Point(872, -9);
+            this.lblHora.Location = new System.Drawing.Point(1018, -9);
             this.lblHora.Name = "lblHora";
             this.lblHora.Size = new System.Drawing.Size(229, 86);
             this.lblHora.TabIndex = 0;
@@ -122,7 +122,7 @@
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Segoe UI Symbol", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblFecha.Location = new System.Drawing.Point(47, 10);
+            this.lblFecha.Location = new System.Drawing.Point(24, 10);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(148, 50);
             this.lblFecha.TabIndex = 1;
@@ -133,11 +133,12 @@
             this.lblTurno.AutoSize = true;
             this.lblTurno.Font = new System.Drawing.Font("Segoe UI Symbol", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTurno.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblTurno.Location = new System.Drawing.Point(361, 10);
+            this.lblTurno.Location = new System.Drawing.Point(232, 10);
             this.lblTurno.Name = "lblTurno";
             this.lblTurno.Size = new System.Drawing.Size(432, 50);
             this.lblTurno.TabIndex = 3;
             this.lblTurno.Text = "TURNO(--:--:-- ; --:--:--)";
+            this.lblTurno.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel_global
             // 
@@ -156,7 +157,7 @@
             // txtcodigo
             // 
             this.txtcodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcodigo.Location = new System.Drawing.Point(576, 279);
+            this.txtcodigo.Location = new System.Drawing.Point(588, 279);
             this.txtcodigo.MaxLength = 3;
             this.txtcodigo.Name = "txtcodigo";
             this.txtcodigo.Size = new System.Drawing.Size(162, 80);
@@ -378,11 +379,11 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.txtnombre);
             this.panel5.Controls.Add(this.pcbimagen1);
             this.panel5.Controls.Add(this.txtcodigo_p);
             this.panel5.Controls.Add(this.lblarea);
             this.panel5.Controls.Add(this.txtarea);
-            this.panel5.Controls.Add(this.txtnombre);
             this.panel5.Controls.Add(this.lblnombre);
             this.panel5.Controls.Add(this.lblapellido);
             this.panel5.Controls.Add(this.label1);
@@ -392,30 +393,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(462, 554);
             this.panel5.TabIndex = 66;
-            // 
-            // txtcodigo_p
-            // 
-            this.txtcodigo_p.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtcodigo_p.Font = new System.Drawing.Font("Segoe UI Symbol", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcodigo_p.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtcodigo_p.Location = new System.Drawing.Point(166, 330);
-            this.txtcodigo_p.Margin = new System.Windows.Forms.Padding(2);
-            this.txtcodigo_p.Multiline = true;
-            this.txtcodigo_p.Name = "txtcodigo_p";
-            this.txtcodigo_p.Size = new System.Drawing.Size(138, 72);
-            this.txtcodigo_p.TabIndex = 50;
-            this.txtcodigo_p.Text = "000";
-            // 
-            // lblarea
-            // 
-            this.lblarea.AutoSize = true;
-            this.lblarea.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblarea.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblarea.Location = new System.Drawing.Point(51, 478);
-            this.lblarea.Name = "lblarea";
-            this.lblarea.Size = new System.Drawing.Size(51, 21);
-            this.lblarea.TabIndex = 67;
-            this.lblarea.Text = "AREA:";
             // 
             // pcbimagen1
             // 
@@ -429,6 +406,17 @@
             this.pcbimagen1.TabIndex = 31;
             this.pcbimagen1.TabStop = false;
             this.pcbimagen1.Click += new System.EventHandler(this.pcbimagen1_Click);
+            // 
+            // lblarea
+            // 
+            this.lblarea.AutoSize = true;
+            this.lblarea.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblarea.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblarea.Location = new System.Drawing.Point(51, 478);
+            this.lblarea.Name = "lblarea";
+            this.lblarea.Size = new System.Drawing.Size(51, 21);
+            this.lblarea.TabIndex = 67;
+            this.lblarea.Text = "AREA:";
             // 
             // txtarea
             // 
@@ -613,10 +601,22 @@
             this.panel6.Controls.Add(this.lblHora);
             this.panel6.Controls.Add(this.lblFecha);
             this.panel6.Controls.Add(this.lblTurno);
-            this.panel6.Location = new System.Drawing.Point(122, -1);
+            this.panel6.Location = new System.Drawing.Point(12, -1);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1098, 77);
+            this.panel6.Size = new System.Drawing.Size(1288, 77);
             this.panel6.TabIndex = 6;
+            // 
+            // txtcodigo_p
+            // 
+            this.txtcodigo_p.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtcodigo_p.Font = new System.Drawing.Font("Segoe UI Symbol", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcodigo_p.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtcodigo_p.Location = new System.Drawing.Point(166, 330);
+            this.txtcodigo_p.Margin = new System.Windows.Forms.Padding(2);
+            this.txtcodigo_p.Name = "txtcodigo_p";
+            this.txtcodigo_p.Size = new System.Drawing.Size(179, 86);
+            this.txtcodigo_p.TabIndex = 50;
+            this.txtcodigo_p.Text = "000";
             // 
             // Verificacion
             // 
@@ -632,6 +632,7 @@
             this.Name = "Verificacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Verificacion";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Verificacion_Load);
             this.panel_global.ResumeLayout(false);
             this.panel_global.PerformLayout();
@@ -708,7 +709,7 @@
         private System.Windows.Forms.TextBox txtapellido1;
         private System.Windows.Forms.DataGridView dgvTurno;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox txtcodigo_p;
         private System.Windows.Forms.TextBox txtcodigo;
+        private System.Windows.Forms.TextBox txtcodigo_p;
     }
 }

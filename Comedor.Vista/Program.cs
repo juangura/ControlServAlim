@@ -16,8 +16,8 @@ namespace Comedor.Vista
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-          // Application.Run(new Verificacion());
-            Application.Run(new RegistroEntrada());
+           Application.Run(new Verificacion());
+          //  Application.Run(new RegistroEntrada());
         }
     }
 }

@@ -408,8 +408,8 @@ namespace Comedor.Vista
             {
                 int n = dgvTurnos.Rows.Add();
                 dgvTurnos.Rows[n].Cells[0].Value = item.IdTurno;
-                dgvTurnos.Rows[n].Cells[1].Value = item.HoraInicio;
-                dgvTurnos.Rows[n].Cells[2].Value = item.HoraFin;
+                dgvTurnos.Rows[n].Cells[1].Value = item.HoraInicio.ToLongTimeString();
+                dgvTurnos.Rows[n].Cells[2].Value = item.HoraFin.ToLongTimeString();
                 ctrlConsumidor_Acceso ctrl = new ctrlConsumidor_Acceso();
                 int total = ctrl.CantidadConsumidores(DateTime.Now.ToString("d"),item.IdTurno);
                 dgvTurnos.Rows[n].Cells[3].Value = total.ToString(); //cantidad
@@ -419,8 +419,11 @@ namespace Comedor.Vista
 
         private void btncantidad_Click(object sender, EventArgs e)
         {
+            dgvTurnos.Visible = false;
+            lbltotal.Text = "CANTIDAD";
             txtregistrado.Visible = true;
             txtfalta.Visible = true;
+            txttotal.Visible = true;
             lblfalta.Visible = true;
             lblatendido.Visible = true;
             line.Visible = true;
@@ -456,9 +459,20 @@ namespace Comedor.Vista
 
         private void btnReserva_Click(object sender, EventArgs e)
         {
+            dgvTurnos.Visible = true;
             ListarTurnoEvent();
-            ctrlConsumidor_Acceso ctrl = new ctrlConsumidor_Acceso();
-            int total = ctrl.CantidadConsumidoresReserva(DateTime.Now.ToString("d"), idturno);
+          //  ctrlConsumidor_Acceso ctrl = new ctrlConsumidor_Acceso();
+           // int total = ctrl.CantidadConsumidoresReserva(DateTime.Now.ToString("d"), idturno);
+            lbltotal.Text = "BOLSA";
+            ctrlturno c = new ctrlturno();
+            List<mdlTurno> lst = new List<mdlTurno>();
+            lst=c.BuscarTurnoE(idDia, idturno);
+            int total = 0;
+            foreach (mdlTurno item in lst)
+            {
+                total = c.CantidadBolsas(DateTime.Now.ToString("d"), item.IdTurno) + total;
+            }
+
             txttotal.Text = total.ToString();
             txtregistrado.Visible = false;
             txtfalta.Visible = false;
