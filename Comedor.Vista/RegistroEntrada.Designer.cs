@@ -79,6 +79,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dgvTurno = new System.Windows.Forms.DataGridView();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.dgvTurnos = new System.Windows.Forms.DataGridView();
             this.panel_global.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -92,6 +93,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTurno)).BeginInit();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTurnos)).BeginInit();
             this.SuspendLayout();
             // 
             // timer_seg
@@ -314,11 +316,12 @@
             this.panel1.Location = new System.Drawing.Point(55, 19);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(491, 506);
+            this.panel1.Size = new System.Drawing.Size(476, 506);
             this.panel1.TabIndex = 71;
             // 
             // panel7
             // 
+            this.panel7.Controls.Add(this.dgvTurnos);
             this.panel7.Controls.Add(this.txttotal);
             this.panel7.Controls.Add(this.txtfalta);
             this.panel7.Controls.Add(this.txtregistrado);
@@ -596,6 +599,14 @@
             this.panel6.Size = new System.Drawing.Size(1098, 77);
             this.panel6.TabIndex = 6;
             // 
+            // dgvTurnos
+            // 
+            this.dgvTurnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTurnos.Location = new System.Drawing.Point(41, 350);
+            this.dgvTurnos.Name = "dgvTurnos";
+            this.dgvTurnos.Size = new System.Drawing.Size(337, 116);
+            this.dgvTurnos.TabIndex = 7;
+            // 
             // RegistroEntrada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -628,6 +639,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvTurno)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTurnos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -683,5 +695,6 @@
         private System.Windows.Forms.Label lblatendido;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape line;
+        private System.Windows.Forms.DataGridView dgvTurnos;
     }
 }

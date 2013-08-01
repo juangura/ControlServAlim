@@ -23,6 +23,7 @@ namespace Comedor.Vista
         List<mdlTurno> ListTurnoActual = new List<mdlTurno>();
         List<mdlConsumidor> ListConsumidor = new List<mdlConsumidor>();
         List<mdlConsumidor> ListIngreso = new List<mdlConsumidor>();
+        
 
         bool ok = false; //confimar el turno
         String idturno=""; //id general
@@ -327,6 +328,95 @@ namespace Comedor.Vista
 
         #endregion
 
+
+        private void ArreglaDataView1()
+        {
+            if (dgvTurnos.Columns.Count > 1) return;
+            dgvTurnos.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 8, FontStyle.Bold);
+            dgvTurnos.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvTurnos.AlternatingRowsDefaultCellStyle.BackColor = Color.AliceBlue;
+            dgvTurnos.CellBorderStyle = DataGridViewCellBorderStyle.None;
+            dgvTurnos.AutoGenerateColumns = false;
+
+
+            DataGridViewColumn column = new DataGridViewTextBoxColumn();
+            column.HeaderText = "ID";
+            column.DataPropertyName = "id";
+            column.Width = 50;
+            column.Visible = false;
+            column.SortMode = DataGridViewColumnSortMode.NotSortable;
+            column.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvTurnos.Columns.Add(column);
+
+            column = new DataGridViewTextBoxColumn();
+            column.HeaderText = "Hora Inc";
+            column.DataPropertyName = "horainic";
+            column.Width = 80;
+            column.SortMode = DataGridViewColumnSortMode.NotSortable;
+            column.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            column.ReadOnly = true;
+            dgvTurnos.Columns.Add(column);
+
+            column = new DataGridViewTextBoxColumn();
+            column.HeaderText = "Hora Fn";
+            column.DataPropertyName = "horafn";
+            column.Width = 160;
+            column.SortMode = DataGridViewColumnSortMode.NotSortable;
+            column.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            column.ReadOnly = true;
+            dgvTurnos.Columns.Add(column);
+
+            column = new DataGridViewTextBoxColumn();
+            column.HeaderText = "Cantidad";
+            column.DataPropertyName = "cantidad";
+            column.Width = 160;
+            column.SortMode = DataGridViewColumnSortMode.NotSortable;
+            column.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            column.ReadOnly = true;
+            dgvTurnos.Columns.Add(column);
+
+            column = new DataGridViewTextBoxColumn();
+            column.SortMode = DataGridViewColumnSortMode.NotSortable;
+            column.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            column.ReadOnly = true;
+            dgvTurnos.Columns.Add(column);
+
+            dgvTurnos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvTurnos.MultiSelect = false;
+            dgvTurnos.AllowUserToResizeColumns = true;
+            dgvTurnos.AllowUserToResizeRows = false;
+            dgvTurnos.BorderStyle = BorderStyle.FixedSingle;
+            dgvTurnos.RowHeadersVisible = false;
+            dgvTurnos.AllowUserToAddRows = false;
+            dgvTurnos.AllowUserToDeleteRows = false;
+            dgvTurnos.AllowUserToOrderColumns = false;
+
+
+        }
+
+
+        private void ListarTurnoEvent()
+        {
+            List<mdlTurno> ListTurnoEvento = new List<mdlTurno>();
+            ctrlturno ctrlT = new ctrlturno();
+            ListTurnoEvento= ctrlT.BuscarTurnoEvento(idDia, idturno);
+            dgvTurnos.Columns.Clear();
+            ArreglaDataView1();
+            dgvTurnos.Rows.Clear();
+
+            foreach (mdlTurno item in ListTurnoEvento)
+            {
+                int n = dgvTurnos.Rows.Add();
+                dgvTurnos.Rows[n].Cells[0].Value = item.IdTurno;
+                dgvTurnos.Rows[n].Cells[1].Value = item.HoraInicio;
+                dgvTurnos.Rows[n].Cells[2].Value = item.HoraFin;
+                ctrlConsumidor_Acceso ctrl = new ctrlConsumidor_Acceso();
+                int total = ctrl.CantidadConsumidores(DateTime.Now.ToString("d"),item.IdTurno);
+                dgvTurnos.Rows[n].Cells[3].Value = total.ToString(); //cantidad
+            }
+            dgvTurnos.RowHeadersVisible = false;
+        }
+
         private void btncantidad_Click(object sender, EventArgs e)
         {
             txtregistrado.Visible = true;
@@ -366,6 +456,7 @@ namespace Comedor.Vista
 
         private void btnReserva_Click(object sender, EventArgs e)
         {
+            ListarTurnoEvent();
             ctrlConsumidor_Acceso ctrl = new ctrlConsumidor_Acceso();
             int total = ctrl.CantidadConsumidoresReserva(DateTime.Now.ToString("d"), idturno);
             txttotal.Text = total.ToString();

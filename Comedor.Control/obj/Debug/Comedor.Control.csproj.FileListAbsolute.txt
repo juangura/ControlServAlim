@@ -20,3 +20,14 @@ C:\Proyec_C#\Comedor2.0\Comedor.Control\obj\Debug\Comedor.Control.Properties.Res
 C:\Proyec_C#\Comedor2.0\Comedor.Control\obj\Debug\Comedor.Control.csproj.GenerateResource.Cache
 C:\Proyec_C#\Comedor2.0\Comedor.Control\obj\Debug\Comedor.Control.exe
 C:\Proyec_C#\Comedor2.0\Comedor.Control\obj\Debug\Comedor.Control.pdb
+C:\ComedorGit\Control\Comedor.Control\bin\Debug\Comedor.Control.exe.config
+C:\ComedorGit\Control\Comedor.Control\bin\Debug\Comedor.Control.exe
+C:\ComedorGit\Control\Comedor.Control\bin\Debug\Comedor.Control.pdb
+C:\ComedorGit\Control\Comedor.Control\bin\Debug\Comedor.Modelo.exe
+C:\ComedorGit\Control\Comedor.Control\bin\Debug\Comedor.Modelo.pdb
+C:\ComedorGit\Control\Comedor.Control\obj\Debug\Comedor.Control.csprojResolveAssemblyReference.cache
+C:\ComedorGit\Control\Comedor.Control\obj\Debug\Comedor.Control.Form1.resources
+C:\ComedorGit\Control\Comedor.Control\obj\Debug\Comedor.Control.Properties.Resources.resources
+C:\ComedorGit\Control\Comedor.Control\obj\Debug\Comedor.Control.csproj.GenerateResource.Cache
+C:\ComedorGit\Control\Comedor.Control\obj\Debug\Comedor.Control.exe
+C:\ComedorGit\Control\Comedor.Control\obj\Debug\Comedor.Control.pdb
