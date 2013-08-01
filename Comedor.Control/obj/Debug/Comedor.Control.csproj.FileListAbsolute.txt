@@ -45,3 +45,14 @@ C:\Comedor\ControlServAlim\Comedor.Control\obj\Debug\Comedor.Control.csproj.Gene
 C:\Comedor\ControlServAlim\Comedor.Control\obj\Debug\Comedor.Control.exe
 C:\Comedor\ControlServAlim\Comedor.Control\obj\Debug\Comedor.Control.pdb
 >>>>>>> 2079b713380e0cfc5072c072aa8adfaba98f9be0
+C:\ServalimGit\ControlServAlim\Comedor.Control\bin\Debug\Comedor.Control.exe.config
+C:\ServalimGit\ControlServAlim\Comedor.Control\bin\Debug\Comedor.Control.exe
+C:\ServalimGit\ControlServAlim\Comedor.Control\bin\Debug\Comedor.Control.pdb
+C:\ServalimGit\ControlServAlim\Comedor.Control\bin\Debug\Comedor.Modelo.exe
+C:\ServalimGit\ControlServAlim\Comedor.Control\bin\Debug\Comedor.Modelo.pdb
+C:\ServalimGit\ControlServAlim\Comedor.Control\obj\Debug\Comedor.Control.csprojResolveAssemblyReference.cache
+C:\ServalimGit\ControlServAlim\Comedor.Control\obj\Debug\Comedor.Control.Form1.resources
+C:\ServalimGit\ControlServAlim\Comedor.Control\obj\Debug\Comedor.Control.Properties.Resources.resources
+C:\ServalimGit\ControlServAlim\Comedor.Control\obj\Debug\Comedor.Control.csproj.GenerateResource.Cache
+C:\ServalimGit\ControlServAlim\Comedor.Control\obj\Debug\Comedor.Control.exe
+C:\ServalimGit\ControlServAlim\Comedor.Control\obj\Debug\Comedor.Control.pdb

@@ -159,28 +159,28 @@ namespace Comedor.Vista
                     {
                         txtnombre.Text = ListIngreso[i].Persona.PrimerNombre + " " + ListIngreso[i].Persona.SegundoNombre;
                         txtapellido.Text = ListIngreso[i].Persona.Apellidos;
-                        pcbimagen1.Image = Image.FromFile("D://Comedor2.0//" + ListIngreso[i].Persona.Foto);
+                        pcbimagen1.Image = Image.FromFile("\\\\CONTROLALIMENTA\\" + ListIngreso[i].Persona.Foto);
                     }
                     if (j == 3)
                     {
 
                         txtnombre1.Text = ListIngreso[i].Persona.PrimerNombre +" "+ ListIngreso[i].Persona.SegundoNombre;
                         txtapellido1.Text = ListIngreso[i].Persona.Apellidos;
-                        pictureBox1.Image = Image.FromFile("D://Comedor2.0//" + ListIngreso[i].Persona.Foto);
+                        pictureBox1.Image = Image.FromFile("\\\\CONTROLALIMENTA\\" + ListIngreso[i].Persona.Foto);
                         
                     }
                     if (j == 2)
                     {
                         txtnombre2.Text = ListIngreso[i].Persona.PrimerNombre +" "+ ListIngreso[i].Persona.SegundoNombre;
                         txtapellido2.Text = ListIngreso[i].Persona.Apellidos;
-                        pictureBox2.Image = Image.FromFile("D://Comedor2.0//"+ ListIngreso[i].Persona.Foto);
+                        pictureBox2.Image = Image.FromFile("\\\\CONTROLALIMENTA\\" + ListIngreso[i].Persona.Foto);
                         
                     }
                     if (j == 1)
                     {
                         txtnombre3.Text = ListIngreso[i].Persona.PrimerNombre +" "+ ListIngreso[i].Persona.SegundoNombre;
                         txtapellido3.Text = ListIngreso[i].Persona.Apellidos;
-                        pictureBox3.Image = Image.FromFile("D://Comedor2.0//" + ListIngreso[i].Persona.Foto);
+                        pictureBox3.Image = Image.FromFile("\\\\CONTROLALIMENTA\\" + ListIngreso[i].Persona.Foto);
                         
                     }
                    

@@ -122,7 +122,7 @@
             this.lblHora.AutoSize = true;
             this.lblHora.Font = new System.Drawing.Font("Segoe UI Symbol", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblHora.Location = new System.Drawing.Point(1048, -9);
+            this.lblHora.Location = new System.Drawing.Point(1003, -9);
             this.lblHora.Name = "lblHora";
             this.lblHora.Size = new System.Drawing.Size(229, 86);
             this.lblHora.TabIndex = 0;
@@ -133,7 +133,7 @@
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Segoe UI Symbol", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblFecha.Location = new System.Drawing.Point(15, 10);
+            this.lblFecha.Location = new System.Drawing.Point(4, 10);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(148, 50);
             this.lblFecha.TabIndex = 1;
@@ -142,11 +142,11 @@
             // lblTurno
             // 
             this.lblTurno.AutoSize = true;
-            this.lblTurno.Font = new System.Drawing.Font("Segoe UI Symbol", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTurno.Font = new System.Drawing.Font("Segoe UI Symbol", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTurno.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lblTurno.Location = new System.Drawing.Point(290, 10);
             this.lblTurno.Name = "lblTurno";
-            this.lblTurno.Size = new System.Drawing.Size(432, 50);
+            this.lblTurno.Size = new System.Drawing.Size(381, 45);
             this.lblTurno.TabIndex = 3;
             this.lblTurno.Text = "TURNO(--:--:-- ; --:--:--)";
             // 
@@ -160,9 +160,9 @@
             this.panel_global.Controls.Add(this.panel3);
             this.panel_global.Controls.Add(this.panel1);
             this.panel_global.Controls.Add(this.panel2);
-            this.panel_global.Location = new System.Drawing.Point(122, 82);
+            this.panel_global.Location = new System.Drawing.Point(82, 100);
             this.panel_global.Name = "panel_global";
-            this.panel_global.Size = new System.Drawing.Size(1098, 655);
+            this.panel_global.Size = new System.Drawing.Size(1104, 828);
             this.panel_global.TabIndex = 5;
             // 
             // btnReserva
@@ -210,7 +210,7 @@
             this.panel4.Controls.Add(this.txtnombre3);
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Controls.Add(this.label7);
-            this.panel4.Location = new System.Drawing.Point(751, 541);
+            this.panel4.Location = new System.Drawing.Point(741, 628);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(293, 166);
             this.panel4.TabIndex = 74;
@@ -274,7 +274,7 @@
             this.panel3.Controls.Add(this.txtapellido2);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Location = new System.Drawing.Point(410, 541);
+            this.panel3.Location = new System.Drawing.Point(408, 628);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(293, 166);
             this.panel3.TabIndex = 73;
@@ -339,7 +339,7 @@
             this.panel1.Location = new System.Drawing.Point(66, 20);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(480, 506);
+            this.panel1.Size = new System.Drawing.Size(478, 506);
             this.panel1.TabIndex = 71;
             // 
             // panel7
@@ -354,49 +354,53 @@
             this.panel7.Controls.Add(this.shapeContainer1);
             this.panel7.Location = new System.Drawing.Point(486, 10);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(458, 475);
+            this.panel7.Size = new System.Drawing.Size(463, 475);
             this.panel7.TabIndex = 67;
             // 
             // dgvTurnos
             // 
+            this.dgvTurnos.BackgroundColor = System.Drawing.Color.White;
             this.dgvTurnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTurnos.Location = new System.Drawing.Point(41, 350);
+            this.dgvTurnos.Location = new System.Drawing.Point(7, 328);
             this.dgvTurnos.Name = "dgvTurnos";
-            this.dgvTurnos.Size = new System.Drawing.Size(337, 116);
+            this.dgvTurnos.Size = new System.Drawing.Size(435, 136);
             this.dgvTurnos.TabIndex = 7;
             // 
             // txttotal
             // 
-            this.txttotal.Font = new System.Drawing.Font("Bradley Hand ITC", 48F, System.Drawing.FontStyle.Bold);
-            this.txttotal.Location = new System.Drawing.Point(214, 56);
+            this.txttotal.Font = new System.Drawing.Font("Segoe UI Symbol", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttotal.Location = new System.Drawing.Point(214, 19);
             this.txttotal.Multiline = true;
             this.txttotal.Name = "txttotal";
-            this.txttotal.Size = new System.Drawing.Size(206, 73);
+            this.txttotal.Size = new System.Drawing.Size(206, 84);
             this.txttotal.TabIndex = 5;
+            this.txttotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtfalta
             // 
-            this.txtfalta.Font = new System.Drawing.Font("Bradley Hand ITC", 48F, System.Drawing.FontStyle.Bold);
-            this.txtfalta.Location = new System.Drawing.Point(214, 271);
+            this.txtfalta.Font = new System.Drawing.Font("Segoe UI Symbol", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtfalta.Location = new System.Drawing.Point(214, 238);
             this.txtfalta.Multiline = true;
             this.txtfalta.Name = "txtfalta";
-            this.txtfalta.Size = new System.Drawing.Size(206, 73);
+            this.txtfalta.Size = new System.Drawing.Size(206, 84);
             this.txtfalta.TabIndex = 4;
+            this.txtfalta.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtregistrado
             // 
-            this.txtregistrado.Font = new System.Drawing.Font("Bradley Hand ITC", 48F, System.Drawing.FontStyle.Bold);
-            this.txtregistrado.Location = new System.Drawing.Point(214, 156);
+            this.txtregistrado.Font = new System.Drawing.Font("Segoe UI Symbol", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtregistrado.Location = new System.Drawing.Point(214, 120);
             this.txtregistrado.Multiline = true;
             this.txtregistrado.Name = "txtregistrado";
-            this.txtregistrado.Size = new System.Drawing.Size(206, 73);
+            this.txtregistrado.Size = new System.Drawing.Size(206, 84);
             this.txtregistrado.TabIndex = 3;
+            this.txtregistrado.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lbltotal
             // 
             this.lbltotal.AutoSize = true;
             this.lbltotal.Font = new System.Drawing.Font("Segoe UI Symbol", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltotal.Location = new System.Drawing.Point(32, 75);
+            this.lbltotal.Location = new System.Drawing.Point(34, 59);
             this.lbltotal.Name = "lbltotal";
             this.lbltotal.Size = new System.Drawing.Size(173, 40);
             this.lbltotal.TabIndex = 2;
@@ -406,7 +410,7 @@
             // 
             this.lblfalta.AutoSize = true;
             this.lblfalta.Font = new System.Drawing.Font("Segoe UI Symbol", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblfalta.Location = new System.Drawing.Point(72, 285);
+            this.lblfalta.Location = new System.Drawing.Point(75, 278);
             this.lblfalta.Name = "lblfalta";
             this.lblfalta.Size = new System.Drawing.Size(133, 40);
             this.lblfalta.TabIndex = 1;
@@ -416,7 +420,7 @@
             // 
             this.lblatendido.AutoSize = true;
             this.lblatendido.Font = new System.Drawing.Font("Segoe UI Symbol", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblatendido.Location = new System.Drawing.Point(18, 189);
+            this.lblatendido.Location = new System.Drawing.Point(19, 160);
             this.lblatendido.Name = "lblatendido";
             this.lblatendido.Size = new System.Drawing.Size(189, 40);
             this.lblatendido.TabIndex = 0;
@@ -429,17 +433,17 @@
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
             this.line});
-            this.shapeContainer1.Size = new System.Drawing.Size(458, 475);
+            this.shapeContainer1.Size = new System.Drawing.Size(463, 475);
             this.shapeContainer1.TabIndex = 6;
             this.shapeContainer1.TabStop = false;
             // 
             // line
             // 
             this.line.Name = "line";
-            this.line.X1 = 79;
-            this.line.X2 = 441;
-            this.line.Y1 = 247;
-            this.line.Y2 = 247;
+            this.line.X1 = 74;
+            this.line.X2 = 436;
+            this.line.Y1 = 223;
+            this.line.Y2 = 223;
             // 
             // lblCodigo
             // 
@@ -537,7 +541,7 @@
             this.panel2.Controls.Add(this.txtnombre1);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(75, 541);
+            this.panel2.Location = new System.Drawing.Point(66, 628);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(293, 166);
             this.panel2.TabIndex = 70;
@@ -618,7 +622,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Comedor.Vista.Properties.Resources.white_back;
-            this.ClientSize = new System.Drawing.Size(1293, 741);
+            this.ClientSize = new System.Drawing.Size(1293, 922);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel_global);
             this.Controls.Add(this.dgvTurno);

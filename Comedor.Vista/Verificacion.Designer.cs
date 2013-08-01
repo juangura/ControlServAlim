@@ -58,10 +58,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.txtnombre = new System.Windows.Forms.TextBox();
             this.pcbimagen1 = new System.Windows.Forms.PictureBox();
+            this.txtcodigo_p = new System.Windows.Forms.TextBox();
             this.lblarea = new System.Windows.Forms.Label();
             this.txtarea = new System.Windows.Forms.TextBox();
-            this.txtnombre = new System.Windows.Forms.TextBox();
             this.lblnombre = new System.Windows.Forms.Label();
             this.lblapellido = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -78,7 +79,6 @@
             this.txtapellido1 = new System.Windows.Forms.TextBox();
             this.dgvTurno = new System.Windows.Forms.DataGridView();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.txtcodigo_p = new System.Windows.Forms.TextBox();
             this.panel_global.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -111,7 +111,7 @@
             this.lblHora.AutoSize = true;
             this.lblHora.Font = new System.Drawing.Font("Segoe UI Symbol", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblHora.Location = new System.Drawing.Point(1018, -9);
+            this.lblHora.Location = new System.Drawing.Point(991, -9);
             this.lblHora.Name = "lblHora";
             this.lblHora.Size = new System.Drawing.Size(229, 86);
             this.lblHora.TabIndex = 0;
@@ -122,7 +122,7 @@
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Segoe UI Symbol", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblFecha.Location = new System.Drawing.Point(24, 10);
+            this.lblFecha.Location = new System.Drawing.Point(0, 10);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(148, 50);
             this.lblFecha.TabIndex = 1;
@@ -131,11 +131,11 @@
             // lblTurno
             // 
             this.lblTurno.AutoSize = true;
-            this.lblTurno.Font = new System.Drawing.Font("Segoe UI Symbol", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTurno.Font = new System.Drawing.Font("Segoe UI Symbol", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTurno.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblTurno.Location = new System.Drawing.Point(232, 10);
+            this.lblTurno.Location = new System.Drawing.Point(254, 10);
             this.lblTurno.Name = "lblTurno";
-            this.lblTurno.Size = new System.Drawing.Size(432, 50);
+            this.lblTurno.Size = new System.Drawing.Size(381, 45);
             this.lblTurno.TabIndex = 3;
             this.lblTurno.Text = "TURNO(--:--:-- ; --:--:--)";
             this.lblTurno.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -148,7 +148,7 @@
             this.panel_global.Controls.Add(this.panel3);
             this.panel_global.Controls.Add(this.panel1);
             this.panel_global.Controls.Add(this.panel2);
-            this.panel_global.Location = new System.Drawing.Point(122, 82);
+            this.panel_global.Location = new System.Drawing.Point(55, 126);
             this.panel_global.Name = "panel_global";
             this.panel_global.Size = new System.Drawing.Size(1098, 647);
             this.panel_global.TabIndex = 5;
@@ -156,11 +156,11 @@
             // 
             // txtcodigo
             // 
-            this.txtcodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcodigo.Font = new System.Drawing.Font("Segoe UI Symbol", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcodigo.Location = new System.Drawing.Point(588, 279);
             this.txtcodigo.MaxLength = 3;
             this.txtcodigo.Name = "txtcodigo";
-            this.txtcodigo.Size = new System.Drawing.Size(162, 80);
+            this.txtcodigo.Size = new System.Drawing.Size(162, 93);
             this.txtcodigo.TabIndex = 75;
             this.txtcodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcodigo_KeyPress_1);
             this.txtcodigo.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtcodigo_KeyUp_1);
@@ -176,7 +176,7 @@
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.Transparent;
+            this.panel8.BackColor = System.Drawing.Color.White;
             this.panel8.Controls.Add(this.pictureBox3);
             this.panel8.Controls.Add(this.txtcodigo3);
             this.panel8.Controls.Add(this.label5);
@@ -271,7 +271,7 @@
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.Transparent;
+            this.panel7.BackColor = System.Drawing.Color.White;
             this.panel7.Controls.Add(this.pictureBox2);
             this.panel7.Controls.Add(this.txtcodigo2);
             this.panel7.Controls.Add(this.label2);
@@ -394,6 +394,16 @@
             this.panel5.Size = new System.Drawing.Size(462, 554);
             this.panel5.TabIndex = 66;
             // 
+            // txtnombre
+            // 
+            this.txtnombre.BackColor = System.Drawing.Color.White;
+            this.txtnombre.Enabled = false;
+            this.txtnombre.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnombre.Location = new System.Drawing.Point(111, 407);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(310, 33);
+            this.txtnombre.TabIndex = 45;
+            // 
             // pcbimagen1
             // 
             this.pcbimagen1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -406,6 +416,21 @@
             this.pcbimagen1.TabIndex = 31;
             this.pcbimagen1.TabStop = false;
             this.pcbimagen1.Click += new System.EventHandler(this.pcbimagen1_Click);
+            // 
+            // txtcodigo_p
+            // 
+            this.txtcodigo_p.BackColor = System.Drawing.Color.White;
+            this.txtcodigo_p.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtcodigo_p.Enabled = false;
+            this.txtcodigo_p.Font = new System.Drawing.Font("Segoe UI Symbol", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcodigo_p.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtcodigo_p.Location = new System.Drawing.Point(166, 330);
+            this.txtcodigo_p.Margin = new System.Windows.Forms.Padding(2);
+            this.txtcodigo_p.Name = "txtcodigo_p";
+            this.txtcodigo_p.ReadOnly = true;
+            this.txtcodigo_p.Size = new System.Drawing.Size(179, 86);
+            this.txtcodigo_p.TabIndex = 50;
+            this.txtcodigo_p.Text = "000";
             // 
             // lblarea
             // 
@@ -422,21 +447,11 @@
             // 
             this.txtarea.BackColor = System.Drawing.Color.White;
             this.txtarea.Enabled = false;
-            this.txtarea.Font = new System.Drawing.Font("Bradley Hand ITC", 14.25F, System.Drawing.FontStyle.Bold);
+            this.txtarea.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtarea.Location = new System.Drawing.Point(111, 475);
             this.txtarea.Name = "txtarea";
-            this.txtarea.Size = new System.Drawing.Size(310, 31);
+            this.txtarea.Size = new System.Drawing.Size(310, 33);
             this.txtarea.TabIndex = 66;
-            // 
-            // txtnombre
-            // 
-            this.txtnombre.BackColor = System.Drawing.Color.White;
-            this.txtnombre.Enabled = false;
-            this.txtnombre.Font = new System.Drawing.Font("Bradley Hand ITC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnombre.Location = new System.Drawing.Point(111, 407);
-            this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(310, 31);
-            this.txtnombre.TabIndex = 45;
             // 
             // lblnombre
             // 
@@ -475,20 +490,20 @@
             // 
             this.txtgrupo.BackColor = System.Drawing.Color.White;
             this.txtgrupo.Enabled = false;
-            this.txtgrupo.Font = new System.Drawing.Font("Bradley Hand ITC", 14.25F, System.Drawing.FontStyle.Bold);
+            this.txtgrupo.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtgrupo.Location = new System.Drawing.Point(111, 510);
             this.txtgrupo.Name = "txtgrupo";
-            this.txtgrupo.Size = new System.Drawing.Size(310, 31);
+            this.txtgrupo.Size = new System.Drawing.Size(310, 33);
             this.txtgrupo.TabIndex = 63;
             // 
             // txtapellido
             // 
             this.txtapellido.BackColor = System.Drawing.Color.White;
             this.txtapellido.Enabled = false;
-            this.txtapellido.Font = new System.Drawing.Font("Bradley Hand ITC", 14.25F, System.Drawing.FontStyle.Bold);
+            this.txtapellido.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtapellido.Location = new System.Drawing.Point(111, 441);
             this.txtapellido.Name = "txtapellido";
-            this.txtapellido.Size = new System.Drawing.Size(310, 31);
+            this.txtapellido.Size = new System.Drawing.Size(310, 33);
             this.txtapellido.TabIndex = 64;
             // 
             // panel2
@@ -502,7 +517,7 @@
             // 
             // panel9
             // 
-            this.panel9.BackColor = System.Drawing.Color.Transparent;
+            this.panel9.BackColor = System.Drawing.Color.White;
             this.panel9.Controls.Add(this.pictureBox1);
             this.panel9.Controls.Add(this.txtcodigo1);
             this.panel9.Controls.Add(this.label15);
@@ -605,21 +620,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1288, 77);
             this.panel6.TabIndex = 6;
-            // 
-            // txtcodigo_p
-            // 
-            this.txtcodigo_p.BackColor = System.Drawing.Color.White;
-            this.txtcodigo_p.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtcodigo_p.Enabled = false;
-            this.txtcodigo_p.Font = new System.Drawing.Font("Segoe UI Symbol", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcodigo_p.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtcodigo_p.Location = new System.Drawing.Point(166, 330);
-            this.txtcodigo_p.Margin = new System.Windows.Forms.Padding(2);
-            this.txtcodigo_p.Name = "txtcodigo_p";
-            this.txtcodigo_p.ReadOnly = true;
-            this.txtcodigo_p.Size = new System.Drawing.Size(179, 86);
-            this.txtcodigo_p.TabIndex = 50;
-            this.txtcodigo_p.Text = "000";
             // 
             // Verificacion
             // 

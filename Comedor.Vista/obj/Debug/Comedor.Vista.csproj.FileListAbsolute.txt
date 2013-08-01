@@ -66,3 +66,18 @@ C:\Comedor\ControlServAlim\Comedor.Vista\obj\Debug\Comedor.Vista.Properties.Reso
 C:\Comedor\ControlServAlim\Comedor.Vista\obj\Debug\Comedor.Vista.Verificacion.resources
 C:\Comedor\ControlServAlim\Comedor.Vista\obj\Debug\Comedor.Vista.csproj.GenerateResource.Cache
 >>>>>>> 2079b713380e0cfc5072c072aa8adfaba98f9be0
+C:\ServalimGit\ControlServAlim\Comedor.Vista\bin\Debug\Comedor.Vista.exe.config
+C:\ServalimGit\ControlServAlim\Comedor.Vista\obj\Debug\Comedor.Vista.exe
+C:\ServalimGit\ControlServAlim\Comedor.Vista\obj\Debug\Comedor.Vista.pdb
+C:\ServalimGit\ControlServAlim\Comedor.Vista\bin\Debug\Comedor.Vista.exe
+C:\ServalimGit\ControlServAlim\Comedor.Vista\bin\Debug\Comedor.Vista.pdb
+C:\ServalimGit\ControlServAlim\Comedor.Vista\bin\Debug\Comedor.Control.exe
+C:\ServalimGit\ControlServAlim\Comedor.Vista\bin\Debug\Comedor.Modelo.exe
+C:\ServalimGit\ControlServAlim\Comedor.Vista\bin\Debug\Comedor.Control.pdb
+C:\ServalimGit\ControlServAlim\Comedor.Vista\bin\Debug\Comedor.Modelo.pdb
+C:\ServalimGit\ControlServAlim\Comedor.Vista\obj\Debug\Comedor.Vista.csprojResolveAssemblyReference.cache
+C:\ServalimGit\ControlServAlim\Comedor.Vista\obj\Debug\Comedor.Vista.RegistroEntrada.resources
+C:\ServalimGit\ControlServAlim\Comedor.Vista\obj\Debug\Comedor.Vista.Form1.resources
+C:\ServalimGit\ControlServAlim\Comedor.Vista\obj\Debug\Comedor.Vista.Properties.Resources.resources
+C:\ServalimGit\ControlServAlim\Comedor.Vista\obj\Debug\Comedor.Vista.Verificacion.resources
+C:\ServalimGit\ControlServAlim\Comedor.Vista\obj\Debug\Comedor.Vista.csproj.GenerateResource.Cache

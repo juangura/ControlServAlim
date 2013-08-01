@@ -27,7 +27,7 @@ namespace Comedor.Vista
         bool ok = false; //confimar el turno
         String idturno=""; //id general
         String idDia=""; //id general
-        SoundPlayer player = new SoundPlayer("C:\\Proyec_C#\\Comedor2.0\\alerta.wav");
+        SoundPlayer player = new SoundPlayer("C:\\ServalimGit\\ControlServAlim\\alerta.wav");
         KeyPressEventArgs temp;
         bool cancel = false;
         #endregion
@@ -242,7 +242,7 @@ namespace Comedor.Vista
             txtapellido.Text = ListConsumidor[0].Persona.Apellidos;
             txtarea.Text = ListConsumidor[0].Area.Nombre;
             txtgrupo.Text = ListConsumidor[0].Grupo.Nombre;
-            pcbimagen1.Image = Image.FromFile("D:\\Comedor2.0\\"+ListConsumidor[0].Persona.Foto);
+            pcbimagen1.Image = Image.FromFile("\\\\CONTROLALIMENTA\\" + ListConsumidor[0].Persona.Foto);
             restriccion(ListConsumidor[0].Estado,panel1,0);
             mdlConsumidor mc = new mdlConsumidor();
 
@@ -252,7 +252,7 @@ namespace Comedor.Vista
             mc.Persona.PrimerNombre = ListConsumidor[0].Persona.PrimerNombre;
             mc.Persona.SegundoNombre = ListConsumidor[0].Persona.SegundoNombre;
             mc.Persona.Apellidos = ListConsumidor[0].Persona.Apellidos;
-            mc.Persona.Foto = "D:\\Comedor2.0\\" + ListConsumidor[0].Persona.Foto;
+            mc.Persona.Foto = "\\\\CONTROLALIMENTA\\" + ListConsumidor[0].Persona.Foto;
             mc.Estado = ListConsumidor[0].Estado;
             mc.Area = new mdlArea();
             mc.Area.Nombre = ListConsumidor[0].Area.Nombre;
