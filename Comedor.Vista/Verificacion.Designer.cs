@@ -608,12 +608,15 @@
             // 
             // txtcodigo_p
             // 
+            this.txtcodigo_p.BackColor = System.Drawing.Color.White;
             this.txtcodigo_p.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtcodigo_p.Enabled = false;
             this.txtcodigo_p.Font = new System.Drawing.Font("Segoe UI Symbol", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcodigo_p.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.txtcodigo_p.Location = new System.Drawing.Point(166, 330);
             this.txtcodigo_p.Margin = new System.Windows.Forms.Padding(2);
             this.txtcodigo_p.Name = "txtcodigo_p";
+            this.txtcodigo_p.ReadOnly = true;
             this.txtcodigo_p.Size = new System.Drawing.Size(179, 86);
             this.txtcodigo_p.TabIndex = 50;
             this.txtcodigo_p.Text = "000";
