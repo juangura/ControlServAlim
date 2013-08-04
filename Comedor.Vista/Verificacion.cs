@@ -95,7 +95,7 @@ namespace Comedor.Vista
                     return;
                 }
                 player.Play();
-                MessageBox.Show("su reserva fue cancelado");
+                MessageBox.Show("Su Reserva fue cancelada");
                 player.Stop();
                 return;
             }

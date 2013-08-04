@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label lblapellido;
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroEntrada));
             this.timer_seg = new System.Windows.Forms.Timer(this.components);
             this.timer_min = new System.Windows.Forms.Timer(this.components);
@@ -339,7 +340,7 @@
             this.panel1.Location = new System.Drawing.Point(66, 20);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(478, 506);
+            this.panel1.Size = new System.Drawing.Size(485, 506);
             this.panel1.TabIndex = 71;
             // 
             // panel7
@@ -361,6 +362,14 @@
             // 
             this.dgvTurnos.BackgroundColor = System.Drawing.Color.White;
             this.dgvTurnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvTurnos.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvTurnos.Location = new System.Drawing.Point(7, 328);
             this.dgvTurnos.Name = "dgvTurnos";
             this.dgvTurnos.Size = new System.Drawing.Size(435, 136);
@@ -400,7 +409,7 @@
             // 
             this.lbltotal.AutoSize = true;
             this.lbltotal.Font = new System.Drawing.Font("Segoe UI Symbol", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltotal.Location = new System.Drawing.Point(34, 59);
+            this.lbltotal.Location = new System.Drawing.Point(35, 43);
             this.lbltotal.Name = "lbltotal";
             this.lbltotal.Size = new System.Drawing.Size(173, 40);
             this.lbltotal.TabIndex = 2;
@@ -420,7 +429,7 @@
             // 
             this.lblatendido.AutoSize = true;
             this.lblatendido.Font = new System.Drawing.Font("Segoe UI Symbol", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblatendido.Location = new System.Drawing.Point(19, 160);
+            this.lblatendido.Location = new System.Drawing.Point(19, 142);
             this.lblatendido.Name = "lblatendido";
             this.lblatendido.Size = new System.Drawing.Size(189, 40);
             this.lblatendido.TabIndex = 0;
