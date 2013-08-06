@@ -50,22 +50,28 @@ namespace Comedor.Vista
             }
             return idDia;
         }
+
+        private void llenarturno() {
+            ctrlturno cTurno = new ctrlturno();
+            this.ListTurno = cTurno.BuscarTurno(Buscar_Dia());
+        }
         
         private void Buscar_turno() {
             //buscar el turno actual...
-            ctrlturno cTurno = new ctrlturno();
-            this.ListTurno = cTurno.BuscarTurno(Buscar_Dia());
+            
             TimeSpan ts = DateTime.Now.TimeOfDay;
 
             foreach(mdlTurno turno in ListTurno ){
 
-                if (ts >= turno.HoraInicio.TimeOfDay && ts <= turno.HoraFin.TimeOfDay) {
+                if (ts >= turno.HoraInicio.TimeOfDay && ts <= turno.HoraFin.TimeOfDay)
+                {
 
                     if (idturno != turno.IdTurno.ToString())
                     {
                         ok = false;
                     }
-                    else {
+                    else
+                    {
                         ok = true;
                         return;
                     }
@@ -75,7 +81,12 @@ namespace Comedor.Vista
                     turnoAc.HoraInicio = turno.HoraInicio;
                     turnoAc.HoraFin = turno.HoraFin;
                     ListTurnoActual.Add(turnoAc);
-
+                    return;
+                }
+                else
+                {
+                    ListTurnoActual.Clear();
+                    ok = false;
                 }
             }
         }
@@ -157,7 +168,7 @@ namespace Comedor.Vista
                     dgvTurno.Rows[n].Cells[2].Value = item.HoraInicio;
                     dgvTurno.Rows[n].Cells[3].Value = item.HoraFin;
                 }
-                return ok = true;
+              //  return ok = true;
             }
             Espera();
             return ok;
@@ -296,7 +307,8 @@ namespace Comedor.Vista
             panel1.Visible = false;
             panel3.Visible = false;
             panel4.Visible = false;
-            txtcodigo.Visible = false;
+            txtcodigo.Visible = false; 
+            lblTurno.Text = "TURNO (--:--:-- ; --:--:--)";
         }
 
         private void abilitado()
@@ -321,21 +333,26 @@ namespace Comedor.Vista
             this.ListDia = cDia.Listar_Dia();
 
             //llamar los turnos del dia actual...
+            llenarturno();
             ConfimarTurno();
             //iniciar el timer por segundo
             timer_seg.Start();
             timer_min.Start();
+            
+            
         }
 
         private void timer_seg_Tick(object sender, EventArgs e)
         {
+            ConfimarTurno();
             lblHora.Text = DateTime.Now.ToLongTimeString();
             lblFecha.Text = DateTime.Now.ToString("d");
         }
 
         private void timer_min_Tick(object sender, EventArgs e)
         {
-            ConfimarTurno();
+            llenarturno();
+            
         }
 
         private void txtcodigo_KeyPress(object sender, KeyPressEventArgs e)
