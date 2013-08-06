@@ -159,28 +159,28 @@ namespace Comedor.Vista
                     {
                         txtnombre.Text = ListIngreso[i].Persona.PrimerNombre + " " + ListIngreso[i].Persona.SegundoNombre;
                         txtapellido.Text = ListIngreso[i].Persona.Apellidos;
-                        pcbimagen1.Image = Image.FromFile("D://Comedor2.0//" + ListIngreso[i].Persona.Foto);
+                        pcbimagen1.Image = Image.FromFile("\\\\CONTROLALIMENTA\\" + ListIngreso[i].Persona.Foto);
                     }
                     if (j == 3)
                     {
 
                         txtnombre1.Text = ListIngreso[i].Persona.PrimerNombre +" "+ ListIngreso[i].Persona.SegundoNombre;
                         txtapellido1.Text = ListIngreso[i].Persona.Apellidos;
-                        pictureBox1.Image = Image.FromFile("D://Comedor2.0//" + ListIngreso[i].Persona.Foto);
+                        pictureBox1.Image = Image.FromFile("\\\\CONTROLALIMENTA\\" + ListIngreso[i].Persona.Foto);
                         
                     }
                     if (j == 2)
                     {
                         txtnombre2.Text = ListIngreso[i].Persona.PrimerNombre +" "+ ListIngreso[i].Persona.SegundoNombre;
                         txtapellido2.Text = ListIngreso[i].Persona.Apellidos;
-                        pictureBox2.Image = Image.FromFile("D://Comedor2.0//"+ ListIngreso[i].Persona.Foto);
+                        pictureBox2.Image = Image.FromFile("\\\\CONTROLALIMENTA\\" + ListIngreso[i].Persona.Foto);
                         
                     }
                     if (j == 1)
                     {
                         txtnombre3.Text = ListIngreso[i].Persona.PrimerNombre +" "+ ListIngreso[i].Persona.SegundoNombre;
                         txtapellido3.Text = ListIngreso[i].Persona.Apellidos;
-                        pictureBox3.Image = Image.FromFile("D://Comedor2.0//" + ListIngreso[i].Persona.Foto);
+                        pictureBox3.Image = Image.FromFile("\\\\CONTROLALIMENTA\\" + ListIngreso[i].Persona.Foto);
                         
                     }
                    
@@ -264,7 +264,7 @@ namespace Comedor.Vista
         private void ArreglaDataViewSalidas()
         {
             if (dgvTurno.Columns.Count > 1) return;
-            dgvTurno.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 8, FontStyle.Bold);
+            dgvTurno.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 10, FontStyle.Bold);
             dgvTurno.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dgvTurno.AlternatingRowsDefaultCellStyle.BackColor = Color.AliceBlue;
             dgvTurno.CellBorderStyle = DataGridViewCellBorderStyle.None;
@@ -332,7 +332,7 @@ namespace Comedor.Vista
         private void ArreglaDataView1()
         {
             if (dgvTurnos.Columns.Count > 1) return;
-            dgvTurnos.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 8, FontStyle.Bold);
+            dgvTurnos.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 12, FontStyle.Bold);
             dgvTurnos.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dgvTurnos.AlternatingRowsDefaultCellStyle.BackColor = Color.AliceBlue;
             dgvTurnos.CellBorderStyle = DataGridViewCellBorderStyle.None;
@@ -351,7 +351,7 @@ namespace Comedor.Vista
             column = new DataGridViewTextBoxColumn();
             column.HeaderText = "Hora Inc";
             column.DataPropertyName = "horainic";
-            column.Width = 80;
+            column.Width = 160;
             column.SortMode = DataGridViewColumnSortMode.NotSortable;
             column.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             column.ReadOnly = true;
@@ -362,16 +362,16 @@ namespace Comedor.Vista
             column.DataPropertyName = "horafn";
             column.Width = 160;
             column.SortMode = DataGridViewColumnSortMode.NotSortable;
-            column.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            column.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             column.ReadOnly = true;
             dgvTurnos.Columns.Add(column);
 
             column = new DataGridViewTextBoxColumn();
             column.HeaderText = "Cantidad";
             column.DataPropertyName = "cantidad";
-            column.Width = 160;
+            column.Width = 80;
             column.SortMode = DataGridViewColumnSortMode.NotSortable;
-            column.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            column.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             column.ReadOnly = true;
             dgvTurnos.Columns.Add(column);
 

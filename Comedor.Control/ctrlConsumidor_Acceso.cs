@@ -84,7 +84,7 @@ namespace Comedor.Control
         
             List<mdlConsumidor> reg= new List<mdlConsumidor>();
 
-            string query = "select a.IdPersona, b.PrimerNombre, b.SegundoNombre, b.Apellidos, b.foto, a.IdGrupo, c.Nombre, a.IdArea, d.Nombre from CONSUMIDOR a, Persona b, GRUPO c, Area d where a.IdPersona=b.IdPersona and a.IdGrupo=c.IdGrupo and a.IdArea=d.IdArea and a.IdConsumidor='" + idconsumidor + "'";
+            string query = "select a.IdPersona, b.Nombres, b.Paterno, b.Materno, b.foto, a.IdGrupo, c.Nombre, a.IdArea, d.Nombre from CONSUMIDOR a, Persona b, GRUPO c, Area d where a.IdPersona=b.IdPersona and a.IdGrupo=c.IdGrupo and a.IdArea=d.IdArea and a.IdConsumidor='" + idconsumidor + "'";
             
             SqlCommand queryCommand = new SqlCommand(query, conexion.get());
             SqlDataReader queryCommandReader = queryCommand.ExecuteReader();
@@ -201,7 +201,7 @@ namespace Comedor.Control
 
             mdlConsumidor reg = new mdlConsumidor();
 
-            string query = "select a.IdPersona, b.PrimerNombre, b.SegundoNombre, b.Apellidos, b.foto, a.IdGrupo, c.Nombre, a.IdArea, d.Nombre from CONSUMIDOR a, Persona b, GRUPO c, Area d where a.IdPersona=b.IdPersona and a.IdGrupo=c.IdGrupo and a.IdArea=d.IdArea and a.IdConsumidor='" + idconsumidor + "'";
+            string query = "select a.IdPersona, b.Nombres, b.Paterno, b.Materno, b.foto, a.IdGrupo, c.Nombre, a.IdArea, d.Nombre from CONSUMIDOR a, Persona b, GRUPO c, Area d where a.IdPersona=b.IdPersona and a.IdGrupo=c.IdGrupo and a.IdArea=d.IdArea and a.IdConsumidor='" + idconsumidor + "'";
 
             SqlCommand queryCommand = new SqlCommand(query, conexion.get());
             SqlDataReader queryCommandReader = queryCommand.ExecuteReader();

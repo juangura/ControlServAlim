@@ -16,3 +16,12 @@ C:\Comedor\ControlServAlim\Comedor.Modelo\obj\Debug\Comedor.Modelo.Properties.Re
 C:\Comedor\ControlServAlim\Comedor.Modelo\obj\Debug\Comedor.Modelo.csproj.GenerateResource.Cache
 C:\Comedor\ControlServAlim\Comedor.Modelo\obj\Debug\Comedor.Modelo.exe
 C:\Comedor\ControlServAlim\Comedor.Modelo\obj\Debug\Comedor.Modelo.pdb
+C:\ServalimGit\ControlServAlim\Comedor.Modelo\bin\Debug\Comedor.Modelo.exe.config
+C:\ServalimGit\ControlServAlim\Comedor.Modelo\bin\Debug\Comedor.Modelo.exe
+C:\ServalimGit\ControlServAlim\Comedor.Modelo\bin\Debug\Comedor.Modelo.pdb
+C:\ServalimGit\ControlServAlim\Comedor.Modelo\obj\Debug\Comedor.Modelo.csprojResolveAssemblyReference.cache
+C:\ServalimGit\ControlServAlim\Comedor.Modelo\obj\Debug\Comedor.Modelo.Form1.resources
+C:\ServalimGit\ControlServAlim\Comedor.Modelo\obj\Debug\Comedor.Modelo.Properties.Resources.resources
+C:\ServalimGit\ControlServAlim\Comedor.Modelo\obj\Debug\Comedor.Modelo.csproj.GenerateResource.Cache
+C:\ServalimGit\ControlServAlim\Comedor.Modelo\obj\Debug\Comedor.Modelo.exe
+C:\ServalimGit\ControlServAlim\Comedor.Modelo\obj\Debug\Comedor.Modelo.pdb
