@@ -54,7 +54,7 @@ namespace Comedor.Control
             DataTable dt2 = new DataTable();
             cmdOper2.Fill(dt2);
             DataRow row2 = dt2.Rows[0];
-
+   
             if (int.Parse(row2["estado"].ToString()) == 3)
             {
                 //3: cancelo su reserva pero kiere entrar en hora de reserva
@@ -69,6 +69,7 @@ namespace Comedor.Control
             }
             if (int.Parse(row2["estado"].ToString()) == 5)
             {
+    
                 //5: el grupo a la k asiste no tiene acceso a ese turno
                 ListCon = Consumidor(idconsumidor, 5, null);
                 return ListCon;

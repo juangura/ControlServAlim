@@ -93,6 +93,7 @@ namespace Comedor.Vista
 
         private void restriccion(int estado, Panel panel, int tipo)
         {
+           
             player.Stop();
             if (estado == 2) {
                 panel.BackColor = Color.OrangeRed;
@@ -123,7 +124,10 @@ namespace Comedor.Vista
                     return;
                 }
                 player.Play();
-                MessageBox.Show("Su grupo no tiene acceso a este turno...!!");
+              //  MessageBox.Show("Su grupo no tiene acceso a este turno...!!");
+                //Acceso Denegado por no tener ningun acceso o Bloqueo
+                Form1 form = new Form1();
+                form.ShowDialog();
                 player.Stop();
                 return;
             }
