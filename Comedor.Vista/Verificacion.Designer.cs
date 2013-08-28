@@ -79,6 +79,10 @@
             this.txtapellido1 = new System.Windows.Forms.TextBox();
             this.dgvTurno = new System.Windows.Forms.DataGridView();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.panel11 = new System.Windows.Forms.Panel();
             this.panel_global.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -109,22 +113,22 @@
             // lblHora
             // 
             this.lblHora.AutoSize = true;
-            this.lblHora.Font = new System.Drawing.Font("Segoe UI Symbol", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblHora.Location = new System.Drawing.Point(991, -9);
+            this.lblHora.Font = new System.Drawing.Font("Segoe UI Symbol", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.ForeColor = System.Drawing.Color.White;
+            this.lblHora.Location = new System.Drawing.Point(1076, 40);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(229, 86);
+            this.lblHora.Size = new System.Drawing.Size(103, 37);
             this.lblHora.TabIndex = 0;
             this.lblHora.Text = "--:--:--";
             // 
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
-            this.lblFecha.Font = new System.Drawing.Font("Segoe UI Symbol", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblFecha.Location = new System.Drawing.Point(0, 10);
+            this.lblFecha.Font = new System.Drawing.Font("Segoe UI Symbol", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.ForeColor = System.Drawing.Color.White;
+            this.lblFecha.Location = new System.Drawing.Point(1086, 3);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(148, 50);
+            this.lblFecha.Size = new System.Drawing.Size(113, 37);
             this.lblFecha.TabIndex = 1;
             this.lblFecha.Text = "--/--/--";
             // 
@@ -132,12 +136,12 @@
             // 
             this.lblTurno.AutoSize = true;
             this.lblTurno.Font = new System.Drawing.Font("Segoe UI Symbol", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTurno.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblTurno.Location = new System.Drawing.Point(254, 10);
+            this.lblTurno.ForeColor = System.Drawing.Color.Gold;
+            this.lblTurno.Location = new System.Drawing.Point(309, 23);
             this.lblTurno.Name = "lblTurno";
-            this.lblTurno.Size = new System.Drawing.Size(381, 45);
+            this.lblTurno.Size = new System.Drawing.Size(506, 45);
             this.lblTurno.TabIndex = 3;
-            this.lblTurno.Text = "TURNO(--:--:-- ; --:--:--)";
+            this.lblTurno.Text = "                    TURNO EN ESPERA";
             this.lblTurno.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel_global
@@ -613,13 +617,54 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Transparent;
+            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
+            this.panel6.Controls.Add(this.panel10);
             this.panel6.Controls.Add(this.lblHora);
             this.panel6.Controls.Add(this.lblFecha);
             this.panel6.Controls.Add(this.lblTurno);
-            this.panel6.Location = new System.Drawing.Point(12, -1);
+            this.panel6.Location = new System.Drawing.Point(-5, -1);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1288, 77);
+            this.panel6.Size = new System.Drawing.Size(1305, 173);
             this.panel6.TabIndex = 6;
+            // 
+            // panel10
+            // 
+            this.panel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel10.BackgroundImage")));
+            this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel10.Location = new System.Drawing.Point(57, 3);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(167, 153);
+            this.panel10.TabIndex = 4;
+            // 
+            // shapeContainer1
+            // 
+            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape1});
+            this.shapeContainer1.Size = new System.Drawing.Size(1284, 960);
+            this.shapeContainer1.TabIndex = 69;
+            this.shapeContainer1.TabStop = false;
+            // 
+            // lineShape1
+            // 
+            this.lineShape1.BorderColor = System.Drawing.Color.DarkGray;
+            this.lineShape1.Name = "lineShape1";
+            this.lineShape1.SelectionColor = System.Drawing.Color.Gainsboro;
+            this.lineShape1.X1 = 79;
+            this.lineShape1.X2 = 849;
+            this.lineShape1.Y1 = 897;
+            this.lineShape1.Y2 = 897;
+            // 
+            // panel11
+            // 
+            this.panel11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel11.BackgroundImage")));
+            this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel11.Location = new System.Drawing.Point(863, 856);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(421, 80);
+            this.panel11.TabIndex = 70;
             // 
             // Verificacion
             // 
@@ -627,10 +672,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Comedor.Vista.Properties.Resources.white_back;
-            this.ClientSize = new System.Drawing.Size(1293, 741);
+            this.ClientSize = new System.Drawing.Size(1284, 960);
+            this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel_global);
             this.Controls.Add(this.dgvTurno);
+            this.Controls.Add(this.shapeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Verificacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -714,5 +761,9 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TextBox txtcodigo;
         private System.Windows.Forms.TextBox txtcodigo_p;
+        private System.Windows.Forms.Panel panel10;
+        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
+        private System.Windows.Forms.Panel panel11;
     }
 }
